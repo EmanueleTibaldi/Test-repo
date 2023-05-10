@@ -31,5 +31,14 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
     echo "File upload failed.";
 }
 
+    $targetDir = "uploads/";
+$targetFile = $targetDir . basename($_FILES["file"]["name"]);
+
+if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFile)) {
+    echo "File uploaded successfully.";
+} else {
+    echo "File upload failed.";
+}
+  
 </body>
 </html>
