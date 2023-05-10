@@ -1,4 +1,4 @@
-# codacy-public-template
+# test-repo
 
 Template repository for new public repositories. 
 
